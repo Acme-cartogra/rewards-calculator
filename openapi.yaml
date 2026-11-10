@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "rewards-calculator"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8120"
+paths:
+  "/rewards-calculators":
+    get:
+      summary: "List rewards-calculators"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create rewards-calculator"
+      responses:
+        "200":
+          description: OK
+  "/rewards-calculators/{id}":
+    get:
+      summary: "Get rewards-calculator by ID"
+      responses:
+        "200":
+          description: OK
