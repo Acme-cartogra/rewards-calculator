@@ -17,6 +17,12 @@ paths:
         "200":
           description: OK
   "/rewards-calculators/{id}":
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
     get:
       summary: "Get rewards-calculator by ID"
       responses:
